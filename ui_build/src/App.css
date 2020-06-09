@@ -1,0 +1,53 @@
+body{
+    background-color:black;
+}
+p{
+    font-family: monospace;
+    font-size: larger;
+    color:white
+}
+label{
+    font-family: monospace;
+    font-size: larger;
+    color:wheat;
+}
+progress{
+    width:100%;
+    height: 20px;
+}
+input{
+    background-color: indigo;
+    color:greenyellow;
+    font-family: monospace;
+    font-size: larger;
+}
+.dir{
+    color: greenyellow;
+}
+.dir:hover{
+    color: green;
+    cursor: pointer;
+}
+.file{
+    color:white;
+}
+
+.dirdialog{
+    overflow: scroll;
+    width: inherit;
+    height: 400px;
+}
+tr{
+    outline: thin solid;;
+    outline-color:gray;
+}
+td{
+    max-height: 0;
+    height: 0;
+    width: 1px;
+    white-space: nowrap;
+}
+div.log{
+    font-family: monospace;
+    font-size: medium;
+}
