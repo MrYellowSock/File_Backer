@@ -7,21 +7,15 @@ function Picker({index,targChanged}) {
   return (
     <fieldset>
       <PathInput useStorage={true} 
-                 showFile={false} 
-                 useCheckBox={false} 
+                 showFile={true} 
+                 useCheckBox={true} 
                  browsePanel={true} 
                  desc={"Target Folder"+index} 
-                 targPath="" 
+                 targPath={targPath}
                  onUpdate={(e)=>{
                     updateTarg(e);
                     targChanged(e);
                  }}/>
-      <p style={{color:"gold",marginBottom:"0"}}>Target Folder explorer</p>
-      <PathInput showFile={true} 
-               useCheckBox={true} 
-               browsePanel={false} 
-               desc={"You shouldnt see this"+index} 
-               targPath={targPath}/>
     </fieldset>
     
   );

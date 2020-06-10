@@ -68,7 +68,7 @@ export default function PathInput({useStorage,desc,onUpdate,showFile,useCheckBox
         <div>
             <p hidden={!browsePanel}>{desc}:
                 <input style={{width:"75%"}} type="text" ref={input} onChange={(e)=>setPath(e.target.value)}/>
-                <button onClick={()=>setBrowse(true)}>browse</button>
+                <button onClick={()=>setBrowse(true)}>show</button>
             </p>
             <fieldset hidden={!isBrowsing}>
                 <DirPanel goBack={goBack} refresh={refresh}/>
@@ -81,7 +81,7 @@ export default function PathInput({useStorage,desc,onUpdate,showFile,useCheckBox
                     setPath={setPath}/>
 
                 <div style={{float:"right"}} hidden={!browsePanel}>
-                    <button onClick={()=>setBrowse(false)}>select</button>
+                    <button onClick={()=>setBrowse(false)}>close</button>
                 </div>
             </fieldset>
         </div>

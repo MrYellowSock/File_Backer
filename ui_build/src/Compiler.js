@@ -12,7 +12,7 @@ export default function Compiler({targList,outPath}) {
                 <progress value={progress} max="100"/>
                 <button style={{float:"right"}} disabled={isCompiling} onClick={()=>{
                     if(!isCompiling){
-                        if(targList.filter((p)=>p.length==0).length > 0)
+                        if(targList.filter((p)=>p.length===0).length > 0)
                         {
                             setLevel(true);
                             setLog("Bad Path!");
@@ -28,6 +28,7 @@ export default function Compiler({targList,outPath}) {
                         }
                         xhr.onloadend = ()=>{
                             setComp(false);
+                            setProg(0);
                         }
                         
                     }
