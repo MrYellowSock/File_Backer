@@ -18,7 +18,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "tsc && node ./dist/App.js"
+    "build":"tsc",
+    "start": "node ./dist/App.js"
   },
   "author": "Sos",
   "license": "ISC"
