@@ -6,5 +6,7 @@ selectively backup files similar to gitignore
 - ./start.sh
 # notes
 - not tested on Windows
-# notes to self
-- should have merge them into one directory.
+# is an Example of:
+- express + React
+- typescripts
+- path , fs , ignore
