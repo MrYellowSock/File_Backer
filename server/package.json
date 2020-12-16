@@ -16,9 +16,11 @@
     "express": "^4.17.1",
     "ignore": "^5.1.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^3.9.6"
+  },
   "scripts": {
-    "build":"tsc",
+    "build": "npx tsc",
     "start": "node ./dist/App.js"
   },
   "author": "Sos",

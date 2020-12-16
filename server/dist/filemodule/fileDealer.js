@@ -27,7 +27,7 @@ function isDir(value) {
 }
 function createName() {
     let d = new Date();
-    let gen = `${d.getDay()}-${d.getMonth()}-${d.getFullYear()}|${d.getHours()}:${d.getMinutes()}`;
+    let gen = "backUp:" + d.toUTCString().replace(' ', '');
     return gen;
 }
 function createCpPath(target, item, output) {
